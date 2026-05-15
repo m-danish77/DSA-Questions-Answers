@@ -1,4 +1,4 @@
-// Pattern 1
+// Pattern 1  n = 3
 // * * *
 // * * *
 // * * *
@@ -9,7 +9,7 @@ function pattern1(n) {
     for (let j = 0; j < n; j++) {
       str += "* ";
     }
-    console.log(str);
+    console.log(str.trim());
   }
 }
 
