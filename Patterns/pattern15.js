@@ -13,4 +13,4 @@ function pattern15(n) {
     console.log(str);
   }
 }
-pattern15(4);
+pattern15(5);
