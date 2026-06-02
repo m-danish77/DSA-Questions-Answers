@@ -16,6 +16,7 @@ function pattern7(n) {
     for (let k = 1; k <= 2 * i - 1; k++) {
       str += "*";
     }
+
     console.log(str);
   }
 }
