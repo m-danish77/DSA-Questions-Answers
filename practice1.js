@@ -1,19 +1,14 @@
-// 1
-// 0 1
-// 1 0 1
-// 0 1 0 1
+describe("Auth Api", () => {
+  const testEmail = `${Date.now()}@example.com`;
 
-function diamondProblem(n) {
-  let interChange = 0;
-  for (let i = 1; i <= n; i++) {
-    let str = "";
-    let startValue = i % 2 == 1 ? 1 : 0;
-    for (j = 1; j <= i; j++) {
-      str += startValue + " ";
-      startValue = startValue == 1 ? 0 : 1;
-    }
-    console.log(str.trim());
-  }
-}
+  describe("POST api/auth/register", () => {
+    it("should register a user", () => {
+      const res = await request(app)
+        .post("/api/auth/register")
+        .send({ name: "test",email: testEmail, password: "test123.", role: "student", });
 
-diamondProblem(4);
+      expect(res.status).toBe(201);
+      expect.
+    });
+  });
+});
